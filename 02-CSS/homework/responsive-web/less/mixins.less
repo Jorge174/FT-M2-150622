@@ -1,0 +1,20 @@
+// Mixins acá
+
+.btn-register(@bg-color, @font-color){
+  background-color: @bg-color;
+  color: @font-color;
+  display: inline;
+  font-size: 15px;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;  
+}
+
+.btn{
+  .btn-register(@btn-bg-color, @sea-shell)
+}
+
+.btn:hover{
+  .btn-register(@waterloo, @btn-bg-color)
+}
+
